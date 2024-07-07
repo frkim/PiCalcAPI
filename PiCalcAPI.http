@@ -1,0 +1,6 @@
+@PiCalcAPI_HostAddress = http://localhost:32768
+
+GET {{PiCalcAPI_HostAddress}}/estimatepi/
+Accept: application/json
+
+###

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PiCalcAPI", "PiCalcAPI.csproj", "{31F8BC61-C36C-4F36-8CE1-767994FFBE6A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{843D3541-B523-4876-925C-A57670FF9325} = {843D3541-B523-4876-925C-A57670FF9325}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "..\Utils\Utils.csproj", "{843D3541-B523-4876-925C-A57670FF9325}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31F8BC61-C36C-4F36-8CE1-767994FFBE6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31F8BC61-C36C-4F36-8CE1-767994FFBE6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31F8BC61-C36C-4F36-8CE1-767994FFBE6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31F8BC61-C36C-4F36-8CE1-767994FFBE6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{843D3541-B523-4876-925C-A57670FF9325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{843D3541-B523-4876-925C-A57670FF9325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{843D3541-B523-4876-925C-A57670FF9325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{843D3541-B523-4876-925C-A57670FF9325}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95518F25-61D8-4CEB-AE61-62EAA88E33D7}
+	EndGlobalSection
+EndGlobal
