@@ -9,10 +9,16 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["PiCalcAPI.csproj", "."]
-RUN dotnet restore "./PiCalcAPI.csproj"
+COPY ["Utils.csproj", "./Utils"]
+RUN dotnet restore "./Utils/Utils.csproj"
 COPY . .
-WORKDIR "/src/."
+WORKDIR "/src/Utils/."
+RUN dotnet build "./Utils.csproj" -c $BUILD_CONFIGURATION -o /app/build
+
+COPY ["PiCalcAPI.csproj", "./PiCalAPI"]
+RUN dotnet restore "./PiCalAPI/PiCalcAPI.csproj"
+COPY . .
+WORKDIR "/src/PiCalAPI/."
 RUN dotnet build "./PiCalcAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
