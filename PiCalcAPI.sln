@@ -5,7 +5,10 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "Utils\Utils.csproj", "{59F8CA90-500A-4C44-9F2F-7949088C1715}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PiCalcAPI", "PiCalcAPI\PiCalcAPI.csproj", "{CE2C4025-6823-4C57-A920-870CDCFF2788}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{1F7B85F3-3121-4B93-8AD5-78DC7423D7C5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59F8CA90-500A-4C44-9F2F-7949088C1715} = {59F8CA90-500A-4C44-9F2F-7949088C1715}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +20,10 @@ Global
 		{59F8CA90-500A-4C44-9F2F-7949088C1715}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59F8CA90-500A-4C44-9F2F-7949088C1715}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59F8CA90-500A-4C44-9F2F-7949088C1715}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CE2C4025-6823-4C57-A920-870CDCFF2788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE2C4025-6823-4C57-A920-870CDCFF2788}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE2C4025-6823-4C57-A920-870CDCFF2788}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE2C4025-6823-4C57-A920-870CDCFF2788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F7B85F3-3121-4B93-8AD5-78DC7423D7C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F7B85F3-3121-4B93-8AD5-78DC7423D7C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F7B85F3-3121-4B93-8AD5-78DC7423D7C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F7B85F3-3121-4B93-8AD5-78DC7423D7C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
